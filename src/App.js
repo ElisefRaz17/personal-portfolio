@@ -1,11 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header";
+import Hero from "./Hero";
+import About from "./About";
+import Project from "./Project";
+import Blog from "./Blog";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Project />
+      <Blog />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
