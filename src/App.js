@@ -6,6 +6,7 @@ import Project from "./Project";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Project />
+      {/* <SampleReactComponents /> */}
       <Blog />
       <Contact />
       <Footer />

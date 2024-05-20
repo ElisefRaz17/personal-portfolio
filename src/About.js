@@ -6,25 +6,24 @@ const About = () => {
     <section className="bg-secondery text-white px-5 py-32" id="about">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="about-info">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-pink-300 pb-2">
+          <h2 className="text-4xl font-bold mb-5">
             About Me
           </h2>
 
           <p className="pb-5">
-            Hi, My Name Is Rohima Akther everyone calls me Amrin. I am a
-            Frontend Developer. I build beautifull websites with React and
+            My name is Elise Frazier and I am interested in pursuing in a career as a
+            Frontend Developer, Data Engineer and/or Full Stack Developer. With showcasing my frontend 
+            expericence, this portfolio website does utilizing the following programs in it React, Typescript and
             Tailwind CSS.
           </p>
           <p className="pb-5">
-            I am proficient in Frontend skills like React.js, Redux, Redux Tool
-            Kit, Axios, Tailwind CSS, SaSS, Css3 and many more.
+            I am proficient in Frontend skills like React.js, Tailwind CSS, Typescript and JavaScript.
           </p>
 
-          <p>In backend I know Node.js, Express.js, MongoDB, and Mongoose</p>
+          <p>In backend I know Node.js.</p>
 
           <p>
-            In my spare time I create YouTube videos and write blogs on my Blog.
-            Where I talk about programming theory and build various projects.
+            In my spare time I like to create handmade jewelry and create creative projects that involve tech and art.
           </p>
         </div>
 

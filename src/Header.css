@@ -4,7 +4,7 @@
 
 /* color */
 .bg-primary {
-    background: tan;
+    background: rgb(255 237 213);
 }
 
 .bg-secondery {
@@ -16,7 +16,7 @@
 }
 
 .text-accent {
-    color: black;
+    color:darkcyan;
 } 
 
 .mobile-nav {
@@ -28,5 +28,5 @@ nav li a {
 }
 
 nav li a:hover {
-    color: pink;
+    color: hotpink;
 }

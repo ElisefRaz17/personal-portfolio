@@ -3,44 +3,18 @@ import React from "react";
 // import devlog from "../assets/devlog.png";
 // import getInspirred from "../assets/get-inspirred.png";
 // import uilogs from "../assets/uilogs.png";
+import reactcomponents from "./assets/ReactTabs.jpg"
+import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents";
+
 
 const Project = () => {
-const projects = [
-    {
-    //   img: devlog,
-      title: "devlog",
-      desc: " A multi author blog. Built with Node.js, MongoDB, React, Redux and Tailwind CSS ",
-      live: "https://devlogg.onrender.com/",
-      code: "https://github.com/Coderamrin/devlog",
-    },
-    {
-    //   img: uilogs,
-      title: "uilogs",
-      desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
-      live: "https://uilogs.xyz/",
-      code: "https://github.com/Coderamrin/html-templates",
-    },
-    {
-    //   img: cssProjects,
-      title: "css projects",
-      desc: "Frontend Mentor challange directory, solved with vanilla CSS",
-      live: "https://build-10-css-projects.netlify.app/",
-      code: "https://github.com/Coderamrin/build-10-css-projects",
-    },
-    {
-    //   img: getInspirred,
-      title: "get Inspirred",
-      desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
-      live: "https://get-inspirred.netlify.app/",
-      code: "https://github.com/Coderamrin/get-inspired",
-    },
-  ];
+
 
   return (
-    <section className="bg-primary text-white px-5 py-32" id="projects">
+    <section className="bg-primary text-cyan-700 px-5 py-32" id="projects">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-cyan-600 pb-2">
+          <h2 className="text-4xl font-bold mb-5">
             Projects
           </h2>
 
@@ -54,7 +28,9 @@ const projects = [
       </div>
 
       <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
-        {projects.map((project, i) => {
+          <SampleReactComponents/>
+    
+        {/* {projects.map((project, i) => {
           return (
             <div className="relative" key={i}>
               <img src={project.img} alt={project.title} />
@@ -80,7 +56,7 @@ const projects = [
               </div>
             </div>
           );
-        })}
+        })} */}
       </div>
     </section>
   );
