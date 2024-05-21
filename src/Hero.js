@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="bg-primary px-5 text-cyan-700 py-32">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
-        <div className="hero-info pb-5 md:pb-0">
+        <div className="hero-info pb-5 md:pb-0" style={{paddingLeft:"100px"}}>
           <h1 className="text-4xl md:text-6md">
             I am <span className="text-accent">E</span>lise <br />
             Frontend Developer, FullStack Developer and Data Engineer
@@ -58,7 +58,7 @@ const Hero = () => {
             src={HeroImg}
             alt="coding illustration"
             className="rounded-full"
-            style={{margin:'100px'}}
+            style={{margin:'100px',padding:'50px'}}
           />
         </div>
       </div>

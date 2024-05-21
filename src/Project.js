@@ -4,8 +4,9 @@ import React from "react";
 // import getInspirred from "../assets/get-inspirred.png";
 // import uilogs from "../assets/uilogs.png";
 import reactcomponents from "./assets/ReactTabs.jpg"
-import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents";
-
+import Tabs from "./projects/sampleReactComponents/Tabs/Tabs.tsx";
+import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents.jsx";
+import PhotoGallery from "./PhotoGallery.tsx";
 
 const Project = () => {
 
@@ -19,8 +20,7 @@ const Project = () => {
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            MERN and vanilla CSS. Check them out.
+            Below are some of the projects I have worked on. I have experience in Frontend Development, Data Engineering and Full Stack Development.
           </p>
         </div>
 
@@ -28,7 +28,9 @@ const Project = () => {
       </div>
 
       <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
-          <SampleReactComponents/>
+
+         <SampleReactComponents/>
+         <PhotoGallery/>
     
         {/* {projects.map((project, i) => {
           return (

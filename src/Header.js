@@ -54,7 +54,7 @@ const Header = () => {
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a href="/#resume">Resume</a>
+            <a href="https://www.linkedin.com/in/elise-frazier-89b356180/overlay/1706385664154/single-media-viewer/?profileId=ACoAACrEJncBAR7UhRnWfb7rbygduE_YmOj7DJA">Resume</a>
           </li>
         </ul>
       </nav>

@@ -1,42 +1,44 @@
-import React from 'react';
-import './Tabs.css';
-import TabsProvider, { useTabsContext } from './TabsContext.tsx';
+import React from "react";
+import "./Tabs.css";
+import TabsProvider, { useTabsContext } from "./TabsContext.tsx";
+import EditIcon from "@mui/icons-material/Edit";
 
 type TabTitlesProps = {
   items: {
-    id: string
-    title: string
-  }[]
-}
+    id: string;
+    title: string;
+    icon: React.ReactNode;
+  }[];
+};
 
 type TabContentProps = {
   items: {
-    id: string
-    content: React.ReactNode
-  }[]
-}
+    id: string;
+    content: React.ReactNode;
+  }[];
+};
 
 type TabsComposition = {
-  Titles: (props: TabTitlesProps) => React.ReactNode
-  Contents: (props: TabContentProps) => React.ReactNode
-}
+  Titles: (props: TabTitlesProps) => React.ReactNode;
+  Contents: (props: TabContentProps) => React.ReactNode;
+};
 
 type TabsProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-type TabsWrapper = (props: TabsProps) => React.ReactNode
+type TabsWrapper = (props: TabsProps) => React.ReactNode;
 
 const Tabs: TabsWrapper & TabsComposition = ({ children }) => {
-  return <TabsProvider>{children}</TabsProvider>
-}
+  return <TabsProvider>{children}</TabsProvider>;
+};
 
 Tabs.Titles = ({ items }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { currentIndex, setCurrentIndex } = useTabsContext()
+  const { currentIndex, setCurrentIndex } = useTabsContext();
   return (
-    <div role="tablist">
-      {items.map(({ id, title }, index) => (
+    <div role="tablist" id="tabs">
+      {items.map(({ id, title, icon }, index) => (
         <button
           key={id}
           id={`tab-control-${id}`}
@@ -44,20 +46,25 @@ Tabs.Titles = ({ items }) => {
           aria-controls={`tab-content-${id}`}
           aria-selected={currentIndex === index}
           onClick={() => {
-            setCurrentIndex(index)
+            setCurrentIndex(index);
           }}
+          className="tab"
         >
+          <div className="icon">
+            <EditIcon />
+            {icon}
+          </div>
           {title}
         </button>
       ))}
     </div>
-  )
-}
+  );
+};
 
 Tabs.Contents = ({ items }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { currentIndex } = useTabsContext()
-  const { id, content } = items[currentIndex]
+  const { currentIndex } = useTabsContext();
+  const { id, content } = items[currentIndex];
   return (
     <div
       key={id}
@@ -67,7 +74,7 @@ Tabs.Contents = ({ items }) => {
     >
       {content}
     </div>
-  )
-}
+  );
+};
 
-export default Tabs
+export default Tabs;

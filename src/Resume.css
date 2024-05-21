@@ -1,0 +1,11 @@
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 60% !important;
+    height: 40%!important;
+}
+.pages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}

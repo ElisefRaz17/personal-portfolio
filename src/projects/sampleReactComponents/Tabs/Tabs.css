@@ -4,13 +4,17 @@ a:hover {
   color: #535bf2;
 }
 
-
+.icon{
+  width: 1.5em;
+  height: 1.5em;
+  left:0;
+}
 h1 {
   font-size: 1.2em;
   line-height: 1.1;
 }
 
-button {
+#tabs > button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
