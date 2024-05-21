@@ -20,7 +20,7 @@ export const SampleReactComponents = () => {
       <h1>Sample React TypeScript Components</h1>
       <p> All of these components include the following technologies to develop them: React, Typescript, Tailwind CSS and Javascript.
         Each of these components are mockups of components that I have created in my current role as a Technical Associate. But you can see a screenshot
-        of some components in my comppan's development environment.
+        of some components in my company's development environment.
       </p>
       <h2 id="samplecomponents">Tabs</h2>
       <Tabs>
