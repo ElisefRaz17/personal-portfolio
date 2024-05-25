@@ -1,6 +1,6 @@
-import React from "react";
 import ReactTabs from "./assets/ReactTabs.jpg";
 import ReactChips from "./assets/ReactChips.jpg";
+import React from "react";
 
 
 const PhotoGallery = () => {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -16,23 +17,26 @@ const Header = () => {
       {/* Desktop Nav */}
       <nav className="hidden md:block">
         <ul className="flex">
-          <li>
-            <a href="/#about">About</a>
+        <li>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <Link to="about/#about">About</Link>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
+            <Link to="project/#project">Projects</Link>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+            <Link to="blog/#blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="contact/#contact">Contact</Link>
           </li>
           <li>
             {/* <a href="/#resume" target="https://www.linkedin.com/in/elise-frazier-89b356180/overlay/1706385664154/single-media-viewer/?profileId=ACoAACrEJncBAR7UhRnWfb7rbygduE_YmOj7DJA" without rel="noreferrer"> */}
-              <a href="/#resume">
+              <Link to="resume/#resume">
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
