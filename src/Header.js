@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import resumePdf from "./assets/MyResume.pdf"
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -18,7 +19,7 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex">
         <li>
-            <Link to="/">Home</Link>
+            <Link to="/#home">Home</Link>
           </li>
           <li>
             <Link to="about/#about">About</Link>
@@ -59,7 +60,7 @@ const Header = () => {
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/elise-frazier-89b356180/overlay/1706385664154/single-media-viewer/?profileId=ACoAACrEJncBAR7UhRnWfb7rbygduE_YmOj7DJA">Resume</a>
+            <a href={resumePdf} target="_blank" rel="noreferrer">Resume</a>
           </li>
         </ul>
       </nav>
