@@ -18,7 +18,7 @@ export const SampleReactComponents = () => {
   return (
     <div id="samplereactcomponents" style={{gap:"0.4rem", display:'flex', flexFlow:"column"}}>
       <h1>Sample React TypeScript Components</h1>
-      <p> All of these components include the following technologies to develop them: React, Typescript, Tailwind CSS and Javascript.
+      <p style={{overflowWrap:'break-word',paddingLeft:0,width:'400px'}}> All of these components include the following technologies to develop them: React, Typescript, Tailwind CSS and Javascript.
         Each of these components are mockups of components that I have created in my current role as a Technical Associate. But you can see a screenshot
         of some components in my company's development environment.
       </p>
@@ -43,7 +43,9 @@ export const SampleReactComponents = () => {
             />
           </ButtonToggle>
       <h2 id="samplecomponents">Chips</h2>
+      <div style={{flexGrow:'1',display:'flex',flexDirection:'column',alignItems:'self-start',width:'100%',paddingLeft:'50px'}}>
       <Chips items={chipsData}/>
+      </div>
       <h2 id="samplecomponents">Search Manager Names Component</h2>
       <SearchFeature />
     </div>

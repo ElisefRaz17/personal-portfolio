@@ -5,7 +5,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { ChipList, ClickEventArgs } from '@syncfusion/ej2-buttons';
 
 const Chips = () => {
- return( <div className="flex gap-2">
+ return( <div className="flex gap-2 flex-col">
   <div
     className="relative grid select-none items-center whitespace-nowrap rounded-full bg-gray-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
     <span className="">chip filled</span>

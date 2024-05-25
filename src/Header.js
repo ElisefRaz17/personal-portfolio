@@ -8,7 +8,7 @@ const Header = () => {
   const handleToggle = () => setToggle(!toggle);
 
   return (
-    <header className="flex justify-between px-5 py-2 bg-primary text-cyan-700 fixed w-full z-10">
+    <header className="flex justify-between px-5 py-2 bg-primary text-cyan-700 fixed w-full z-10" style={{right:'0px',left:'0px'}}>
       <a href="/" className="logo text-2xl font-bold text-cyan-700">
         Personal Porfolio
       </a>
@@ -29,7 +29,7 @@ const Header = () => {
             <a href="/#contact">Contact</a>
           </li>
           <li>
-            <a href="#resume -link" target="_blank" without rel="noreferrer">
+            <a href="#resume -link" target="https://www.linkedin.com/in/elise-frazier-89b356180/overlay/1706385664154/single-media-viewer/?profileId=ACoAACrEJncBAR7UhRnWfb7rbygduE_YmOj7DJA" without rel="noreferrer">
               Resume
             </a>
           </li>

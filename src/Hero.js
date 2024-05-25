@@ -2,16 +2,16 @@ import React from "react";
 import HeroImg from "./assets/CurrentHeadshot.jpeg";
 import "./Hero.css";
 import {
-  AiOutlineTwitter,
-  AiOutlineYoutube,
-  AiOutlineFacebook,
+  AiOutlineLinkedin,
+  AiOutlineGithub,
+  AiOutlineCode,
 } from "react-icons/ai";
-
+import CourseaLogo from './assets/coursera-icon.png';
 const Hero = () => {
   return (
     <section className="bg-primary px-5 text-cyan-700 py-32">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
-        <div className="hero-info pb-5 md:pb-0" style={{paddingLeft:"100px"}}>
+        <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl md:text-6md">
             I am <span className="text-accent">E</span>lise <br />
             Frontend Developer, FullStack Developer and Data Engineer
@@ -23,25 +23,25 @@ const Hero = () => {
 
           <div className="flex py-5 ">
             <a
-              href="https://twitter.com/CoderAmrin"
+              href="https://www.linkedin.com/in/elise-frazier-89b356180/"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineTwitter size={40} />{" "}
+              <AiOutlineLinkedin size={40} />{" "}
             </a>
             <a
-              href="https://www.youtube.com/@coderamrin"
+              href="https://github.com/ElisefRaz17"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineYoutube size={40} />{" "}
+              <AiOutlineGithub size={40} />{" "}
             </a>
             <a
-              href="https://www.facebook.com/CoderAmrin/"
+              href="https://www.coursera.org/user/892105428b950ab4c0729e92e21a1741"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineFacebook size={40} />{" "}
+              <AiOutlineCode size={40}/>{" "}
             </a>
           </div>
 
@@ -53,12 +53,14 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="hero-img">
+        <div className="hero-img"  style={{paddingLeft:'100px'}}>
           <img
             src={HeroImg}
             alt="coding illustration"
             className="rounded-full"
-            style={{margin:'100px',padding:'50px'}}
+            style={{borderRadius:'50px'}}
+           
+            // style={{margin:'100px',padding:'50px'}}
           />
         </div>
       </div>
