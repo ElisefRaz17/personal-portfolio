@@ -4,8 +4,9 @@
     height: 40%!important;
 }
 .pages{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem; */
+    padding-left: 350px;
 }

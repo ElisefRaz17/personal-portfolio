@@ -47,17 +47,20 @@ const Header = () => {
         className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
       >
         <ul className="flex flex-col">
-          <li>
-            <a href="/#about">About</a>
+        <li>
+            <Link to="/#home">Home</Link>
           </li>
           <li>
-            <a href="/#projects">Projects</a>
+            <Link to="project/#project">Project</Link>
           </li>
           <li>
-            <a href="/#blog">Blog</a>
+          <Link to="about/#about">About</Link>
           </li>
           <li>
-            <a href="/#contact">Contact</a>
+          <Link to="blog/#blog">Blog</Link>
+          </li>
+          <li>
+          <Link to="contact/#contact">Contact</Link>
           </li>
           <li>
             <a href={resumePdf} target="_blank" rel="noreferrer">Resume</a>
