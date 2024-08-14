@@ -10,8 +10,8 @@ const Header = () => {
   const handleToggle = () => setToggle(!toggle);
 
   return (
-    <header className="flex justify-between px-5 py-2 bg-primary text-cyan-700 fixed w-full z-10" style={{right:'0px',left:'0px'}}>
-      <a href="/" className="logo text-2xl font-bold text-cyan-700">
+    <header className="flex justify-between px-5 py-2 bg-primary text-amber-800 fixed w-full z-10" style={{right:'0px',left:'0px'}}>
+      <a href="/" className="logo text-2xl font-bold text-amber-800">
         Personal Porfolio
       </a>
 

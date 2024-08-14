@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family:"Montserrat";
     line-height: 1.5 !important;
 }

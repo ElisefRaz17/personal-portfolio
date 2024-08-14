@@ -4,11 +4,11 @@
 
 /* color */
 .bg-primary {
-    background: rgb(255 237 213);
+    background:#fdf0d5;
 }
 
 .bg-secondery {
-    background: darkcyan;
+    background: #d4a373;
 }
 
 .bg-accent {
@@ -16,7 +16,7 @@
 }
 
 .text-accent {
-    color:darkcyan;
+    color:#d4a373;
 } 
 
 .mobile-nav {

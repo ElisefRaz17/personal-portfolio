@@ -13,7 +13,7 @@ const Project = () => {
 
   return (
     <section className="bg-primary text-cyan-700 px-5 py-32" id="projects" style={{padding:'0px'}}>
-      <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
+      <div className="container grid mx-auto md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
           <h2 className="text-4xl font-bold mb-5">
             Projects
@@ -27,7 +27,7 @@ const Project = () => {
         <div className="about-img"></div>
       </div>
 
-      <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
+      <div className="projects container flex flex-row flex-wrap gap-10 justify-center">
 
          <SampleReactComponents/>
          <PhotoGallery/>
