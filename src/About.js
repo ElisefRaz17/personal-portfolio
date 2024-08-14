@@ -12,15 +12,14 @@ const About = () => {
 
           <p className="pb-5">
             My name is Elise Frazier and I am interested in pursuing in a career as a
-            Frontend Developer, Data Engineer and/or Full Stack Developer. With showcasing my frontend 
-            expericence, this portfolio website does utilizing the following programs in it React, Typescript and
-            Tailwind CSS.
+            Frontend Developer, UI/UX Designer, Software Engineer and/or Full Stack Developer.
           </p>
           <p className="pb-5">
-            I am proficient in Frontend skills like React.js, Tailwind CSS, Typescript and JavaScript.
+            I am proficient in Frontend skills like React.js, Next.js, Tailwind CSS,
+            HTML, CSS, Typescript and JavaScript.
           </p>
 
-          <p>In backend I know Node.js.</p>
+          <p>In backend I know Python, Java and C++.</p>
 
           <p>
             In my spare time I like to create handmade jewelry and create creative projects that involve tech and art.

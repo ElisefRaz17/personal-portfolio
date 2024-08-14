@@ -12,7 +12,7 @@ const Project = () => {
 
 
   return (
-    <section className="bg-primary text-cyan-700 px-5 py-32" id="projects" style={{padding:'0px'}}>
+    <section className="bg-primary text-cyan-700 px-5 py-32" id="project" style={{paddingLeft:'20px'}}>
       <div className="container grid mx-auto md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
           <h2 className="text-4xl font-bold mb-5">

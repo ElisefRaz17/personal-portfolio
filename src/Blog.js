@@ -4,7 +4,7 @@ import GitHubCards from "./projects/GitHubCards";
 
 const Blog = () => {
   return (
-    <section className="bg-primary text-orange-950 px-5 py-32" id="blog">
+    <section className="bg-primary text-orange-950 px-5 py-32" style={{paddingTop:'0px'}} id="blog">
       <div style={{ display: "flex", justifyContent: "center", gap:"2rem" }}>
         <GitHubCards />
         <LinkedInEmbed

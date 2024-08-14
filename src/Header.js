@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
-import { Link } from "react-router-dom";
-import resumePdf from "./assets/MyResume.pdf"
+// import { a } from "react-router-dom";
+import resumePdf from "./assets/IT Resume as of August 2024 (1).pdf";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,33 +11,33 @@ const Header = () => {
 
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-amber-800 fixed w-full z-10" style={{right:'0px',left:'0px'}}>
-      <a href="/" className="logo text-2xl font-bold text-amber-800">
+      <a href="/" className="logo text-2xl font-bold text-cyan-700 hover:text-cyan-600">
         Personal Porfolio
       </a>
 
       {/* Desktop Nav */}
-      <nav className="hidden md:block">
+      <nav className="hidden md:block bg-white rounded-lg shadow-md">
         <ul className="flex">
         <li>
-            <Link to="/#home">Home</Link>
+            <a href="/">Home</a>
           </li>
           <li>
-            <Link to="about/#about">About</Link>
+            <a href="#about">About</a>
           </li>
           <li>
-            <Link to="project/#project">Projects</Link>
+            <a href="#project">Projects</a>
           </li>
           <li>
-            <Link to="blog/#blog">Blog</Link>
+            <a href="#blog">Blog</a>
           </li>
           <li>
-            <Link to="contact/#contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             {/* <a href="/#resume" target="https://www.linkedin.com/in/elise-frazier-89b356180/overlay/1706385664154/single-media-viewer/?profileId=ACoAACrEJncBAR7UhRnWfb7rbygduE_YmOj7DJA" without rel="noreferrer"> */}
-              <Link to="resume/#resume">
+              <a href="#resume">
               Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -48,22 +48,22 @@ const Header = () => {
       >
         <ul className="flex flex-col">
         <li>
-            <Link to="/#home">Home</Link>
+            <a to="/">Home</a>
           </li>
           <li>
-            <Link to="project/#project">Project</Link>
+            <a to="#project">Project</a>
           </li>
           <li>
-          <Link to="about/#about">About</Link>
+          <a to="#about">About</a>
           </li>
           <li>
-          <Link to="blog/#blog">Blog</Link>
+          <a to="#blog">Blog</a>
           </li>
           <li>
-          <Link to="contact/#contact">Contact</Link>
+          <a to="#contact">Contact</a>
           </li>
           <li>
-            <a href={resumePdf} target="_blank" rel="noreferrer">Resume</a>
+            <a href={resumePdf} id="#resume" target="_blank" rel="noreferrer">Resume</a>
           </li>
         </ul>
       </nav>

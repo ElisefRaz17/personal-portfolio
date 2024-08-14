@@ -12,7 +12,7 @@
 }
 
 .bg-accent {
-    background: pink;
+    background: cyan;
 }
 
 .text-accent {
@@ -20,7 +20,7 @@
 } 
 
 .mobile-nav {
-    @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+    @apply block md:hidden fixed top-10 py-2 w-full h-full bg-amber-900 duration-500;
 } 
 
 nav li a {
@@ -28,5 +28,5 @@ nav li a {
 }
 
 nav li a:hover {
-    color: hotpink;
+    color: darkcyan;
 }
