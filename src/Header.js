@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-amber-800 fixed w-full z-10" style={{right:'0px',left:'0px'}}>
-      <a href="/" className="logo text-2xl font-bold text-cyan-700 hover:text-cyan-600">
+      <a href="#hero" className="logo text-2xl font-bold text-cyan-700 hover:text-cyan-600">
         Personal Porfolio
       </a>
 
@@ -19,7 +19,7 @@ const Header = () => {
       <nav className="hidden md:block bg-white rounded-lg shadow-md">
         <ul className="flex">
         <li>
-            <a href="/">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -48,7 +48,7 @@ const Header = () => {
       >
         <ul className="flex flex-col">
         <li>
-            <a to="/">Home</a>
+            <a to="#hero">Home</a>
           </li>
           <li>
             <a to="#project">Project</a>
