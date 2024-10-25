@@ -1,8 +1,8 @@
 import React from "react";
-import file from "./assets/IT Resume as of August 2024 (1).pdf";
+import file from "./assets/IT Resume as of September 2024.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import styles from "./Resume.css";
-import resume from "./assets/MyResume-August.png";
+import resume from "./assets/UpdatedResumeScreenshot.png";
 import { Button } from "@material-ui/core";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;

@@ -3,24 +3,27 @@ import React from "react";
 // import devlog from "../assets/devlog.png";
 // import getInspirred from "../assets/get-inspirred.png";
 // import uilogs from "../assets/uilogs.png";
-import reactcomponents from "./assets/ReactTabs.jpg"
+import reactcomponents from "./assets/ReactTabs.jpg";
 import Tabs from "./projects/sampleReactComponents/Tabs/Tabs.tsx";
 import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents.jsx";
 import PhotoGallery from "./PhotoGallery.tsx";
+import FigmaUI from "./FigmaUI.js";
 
 const Project = () => {
-
-
   return (
-    <section className="bg-primary text-cyan-700 px-5 py-32" id="project" style={{paddingLeft:'20px'}}>
+    <section
+      className="bg-primary text-cyan-700 px-5 py-32"
+      id="project"
+      style={{ paddingLeft: "20px" }}
+    >
       <div className="container grid mx-auto md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5">
-            Projects
-          </h2>
+          <h2 className="text-4xl font-bold mb-5">Projects</h2>
 
           <p className="pb-5">
-            Below are some of the projects I have worked on. I have experience in Frontend Development, Data Engineering and Full Stack Development.
+            Below are some of the projects I have worked on. I have experience
+            in Frontend Development, Data Engineering and Full Stack
+            Development.
           </p>
         </div>
 
@@ -28,10 +31,9 @@ const Project = () => {
       </div>
 
       <div className="projects container flex flex-row flex-wrap gap-10 justify-center">
-
-         <SampleReactComponents/>
-         <PhotoGallery/>
-    
+        <SampleReactComponents />
+        <PhotoGallery />
+        <FigmaUI />
         {/* {projects.map((project, i) => {
           return (
             <div className="relative" key={i}>
@@ -62,6 +64,6 @@ const Project = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Project;
