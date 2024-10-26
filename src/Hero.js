@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className="bg-primary px-5 text-amber-800 py-32" id="hero">
       <div className="container mx-auto flex flex-wrap flex-col md:grid-cols-2 items-center justify-center md:justify-between">
-        <div className="w-2/3 flex flex-row">
+        <div className="w-2/3 flex flex-row flex-wrap">
           <div className="hero-info pb-5 md:pb-0">
             <h1 className="text-4xl md:text-6md">Creative Developer</h1>
 

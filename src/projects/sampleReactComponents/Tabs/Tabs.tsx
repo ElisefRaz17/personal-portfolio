@@ -48,7 +48,7 @@ Tabs.Titles = ({ items }) => {
           onClick={() => {
             setCurrentIndex(index);
           }}
-          className="tab"
+          className={`tab ${currentIndex === index ? 'active': ''}`}
         >
           <div className="icon">
             <EditIcon />

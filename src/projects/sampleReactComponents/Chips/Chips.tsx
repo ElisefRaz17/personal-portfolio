@@ -1,29 +1,31 @@
 import "./Chips.css";
-import React from "react";
-import ChipsProvider, {useChipsContext} from "./ChipsContext.tsx";
+import React, { useState } from "react";
+import ChipsProvider, { useChipsContext } from "./ChipsContext.tsx";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { ChipList, ClickEventArgs } from '@syncfusion/ej2-buttons';
-
+import { ChipList, ClickEventArgs } from "@syncfusion/ej2-buttons";
+import { Chip } from "@material-ui/core";
 const Chips = () => {
- return( <div className="flex gap-2 flex-col">
-  <div
-    className="relative grid select-none items-center whitespace-nowrap rounded-full bg-gray-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
-    <span className="">chip filled</span>
-  </div>
-  <div
-    className="relative grid select-none items-center whitespace-nowrap rounded-full bg-gradient-to-tr from-gray-900 to-gray-800 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
-    <span className="">chip gradient</span>
-  </div>
-  <div
-    className="relative grid select-none items-center whitespace-nowrap rounded-full border border-gray-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-gray-700">
-    <span className="">chip outlined</span>
-  </div>
-  <div
-    className="relative grid select-none items-center whitespace-nowrap rounded-full bg-gray-900/10 py-1.5 px-3 font-sans text-xs font-bold uppercase text-gray-900">
-    <span className="">chip ghost</span>
-  </div>
-</div>)
-}
+  const [chips, setChips] = useState(["Chip 1", "Chip 2"]);
+  const handleDelete = (chipToDelete) => () => {
+    setChips((currentChips) =>
+      currentChips.filter((chip) => chip !== chipToDelete)
+    );
+  };
+  const handleAdd = (newChip) => {
+    setChips((currentChips) => [...currentChips, newChip]);
+  };
+  return (
+    <div className="flex gap-2 flex-col">
+      {chips.map((chip) => (
+        <Chip key={chip} label={chip} onDelete={handleDelete(chip)}/>
+        // <div key={chip} className="relative grid select-none items-center whitespace-nowrap rounded-full bg-gradient-to-tr from-gray-900 to-gray-800 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
+        //   <span className="">{chip}</span>
+        // </div>
+      ))}
+      <button onClick={()=>handleAdd(`Chip ${chips.length + 1}`)}>Add Chip</button>
+    </div>
+  );
+};
 
 // type ChipsContentProps = {
 //     items:{

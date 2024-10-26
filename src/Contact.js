@@ -8,7 +8,7 @@ const Contact = () => {
           Contact Me
         </h2>
         <p>
-          I am currently work as a Technical Associate but always open to expand my work through volunteer and freelance work. If you
+          I currently work as a Technical Associate but always open to expand my work through volunteer and freelance work. If you
           want to discuss about that feel free to email me or call me.
         </p>
 
