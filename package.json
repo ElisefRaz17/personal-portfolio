@@ -22,7 +22,7 @@
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "react-social-media-embed": "^2.5.13",
-    "typescript": "^5.4.5",
+    "typescript": "5.7.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
