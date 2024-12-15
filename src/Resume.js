@@ -3,7 +3,7 @@ import file from "./assets/IT Resume as of September 2024.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import styles from "./Resume.css";
 import resume from "./assets/UpdatedResumeScreenshot.png";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

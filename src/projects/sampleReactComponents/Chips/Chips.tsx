@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ChipsProvider, { useChipsContext } from "./ChipsContext.tsx";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ChipList, ClickEventArgs } from "@syncfusion/ej2-buttons";
-import { Chip } from "@material-ui/core";
+import { Chip } from "@mui/material";
 const Chips = () => {
   const [chips, setChips] = useState(["Chip 1", "Chip 2"]);
   const handleDelete = (chipToDelete) => () => {
