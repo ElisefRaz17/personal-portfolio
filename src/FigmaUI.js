@@ -1,12 +1,57 @@
 import React from "react";
-
+import ImageGallery from "react-image-gallery";
+import "./FigmaUI.css";
 function FigmaUI() {
-  const figmaUrl =
-    "https://embed.figma.com/board/3scGs06hhFK7Ut8Lv69w3a/SSO-Reporting-Tools-Wireframes?node-id=0-1&embed-host=share";
-  const figma1Url =
-    "https://embed.figma.com/design/jqzpXMTTJ7ssobg0sn1RDd/Mission-Control-Wireframes?embed-host=share";
-  const figma2Url =
-    "https://embed.figma.com/design/a0YGoALkba6B78CoSY2Mt4/Institution-Form?embed-host=share";
+  const images = [
+    {
+      original: require("./assets/login.png"),
+      thumbnail: require("./assets/login.png"),
+    },
+    {
+      original: require("./assets/managementTable.png"),
+      thumbnail: require("./assets/managementTable.png"),
+    },
+    {
+      original: require("./assets/listing.png"),
+      thumbnail: require("./assets/listing.png"),
+    },
+    {
+      original: require("./assets/editingView.png"),
+      thumbnail: require("./assets/editingView.png"),
+    },
+  ];
+  const missionImages = [
+    {
+      original: require("./assets/missionLogin.png"),
+      thumbnail: require("./assets/missionLogin.png"),
+    },
+    {
+      original: require("./assets/missionFlow.png"),
+      thumbnail: require("./assets/missionFlow.png"),
+    },
+    {
+      original: require("./assets/missionFlowStatus.png"),
+      thumbnail: require("./assets/missionFlowStatus.png"),
+    },{
+      original: require("./assets/missionEnding.png"),
+      thumbnail: require("./assets/missionEnding.png"),
+    }
+  ];
+  const institutionImages = [
+    {
+      original: require("./assets/institutionLogin.png"),
+      thumbnail: require("./assets/institutionLogin.png"),
+    },
+    {
+      original: require("./assets/institutionLoginConfirm.png"),
+      thumbnail: require("./assets/institutionLoginConfirm.png"),
+    },
+    {
+      original: require("./assets/institutionLoginDropdown.png"),
+      thumbnail: require("./assets/institutionLoginDropdown.png"),
+    }
+  ];
+
   return (
     <div className="flex flex-col w-full items-center">
       <span className="p-4">
@@ -23,14 +68,12 @@ function FigmaUI() {
           and developed the frontend of the application using Next.js with the
           backend being Springboot
         </p>
-        <iframe
-          title="Figma Project"
-          src={figmaUrl}
-          width="300"
-          height="200"
-          allowFullScreen
-        />
       </span>
+      <div>
+        <div style={{ width: "200", height: "200" }}>
+          <ImageGallery items={images} />
+        </div>
+      </div>
 
       <span
         className="flex flex-col md:max-w-2xl max-w-md p-4"
@@ -41,27 +84,22 @@ function FigmaUI() {
           This application uses React for the frontend and purpose is to keep
           status of different API flows.
         </p>
-        <iframe
-          title="Mission Control Project"
-          src={figma1Url}
-          width="300"
-          height="200"
-          allowFullScreen
-        />
+        <div style={{ width: "200", height: "200" }}>
+          <ImageGallery items={missionImages} />
+        </div>
       </span>
-      <span className="flex flex-col md:max-w-2xl max-w-md p-4" id="institution">
+      <span
+        className="flex flex-col md:max-w-2xl max-w-md p-4"
+        id="institution"
+      >
         <h4 className="font-bold">Instituion Test Pad</h4>
         <p>
           Thi application utilized Next.js fron the frontend, SpringBoot for the
           backend and SAML to replicate a Single Sign-on Flow
         </p>
-        <iframe
-          title="Institution Test Pad Project"
-          src={figma2Url}
-          width="300"
-          height="200"
-          allowFullScreen
-        />
+        <div style={{ width: "200", height: "200" }}>
+          <ImageGallery items={institutionImages} />
+        </div>
       </span>
     </div>
   );

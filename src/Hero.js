@@ -18,9 +18,9 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6md">Creative Developer</h1>
 
             <p className="py-5">
-              Proficient in the following roles:
+              Proficient in the following roles: 
               <b>
-                Frontend Developer, Full Stack Developer, UI/UX Designer and Software Engineer
+                  Software Engineer and UI/UX Designer
               </b>
               <br />
             </p>

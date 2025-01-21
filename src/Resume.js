@@ -1,8 +1,8 @@
 import React from "react";
-import file from "./assets/IT Resume as of September 2024.pdf";
-import { Document, Page, pdfjs } from "react-pdf";
+import file from "./assets/IT Resume as of January 2025.pdf";
+import { pdfjs } from "react-pdf";
 import styles from "./Resume.css";
-import resume from "./assets/UpdatedResumeScreenshot.png";
+import resume from "./assets/2025Resume.png";
 import { Button } from "@mui/material";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -17,7 +17,7 @@ function Resume() {
             href={file}
             download="ResumeDoc"
             target="_blank"
-            className="bg-orange-700 rounded-md py-2 w-fit hover:bg-orange-500"
+            className="bg-orange-700 rounded-md py-2 w-fit hover:bg-orange-500" rel="noreferrer"
           >
             <Button style={{ color: "white", textAlign: "center" }}>
               Download PDF

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "./Header.css";
 // import { a } from "react-router-dom";
-import resumePdf from "./assets/IT Resume as of August 2024 (1).pdf";
+import resumePdf from "./assets/IT Resume as of January 2025.pdf";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
