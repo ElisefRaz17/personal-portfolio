@@ -1,15 +1,36 @@
 import React from "react";
-// import cssProjects from "../assets/cssprojects.png";
-// import devlog from "../assets/devlog.png";
-// import getInspirred from "../assets/get-inspirred.png";
-// import uilogs from "../assets/uilogs.png";
-import reactcomponents from "./assets/ReactTabs.jpg";
-import Tabs from "./projects/sampleReactComponents/Tabs/Tabs.tsx";
 import { SampleReactComponents } from "./projects/sampleReactComponents/sampleReactComponents.jsx";
 import PhotoGallery from "./PhotoGallery.tsx";
 import FigmaUI from "./FigmaUI.js";
+import ProjectCards from "./components/ProjectCards.js";
+import image1 from "./assets/todoapp.png";
+import image2 from "./assets/icanbeher.png"
+import image3 from "./assets/weathertracker.png"
 
 const Project = () => {
+  const urls = [
+    {
+      id: 0,
+      name: 'ToDo List App',
+      url: "https://github.com/ElisefRaz17/todolist",
+      previewImg: image1,
+      description: "A TodoList App built with MERN tech stack and user authentication"
+    },
+    {
+      id: 1,
+      name: "I Can Be Her App",
+      url: "https://nextjs-boilerplate-iujp22gej-elises-projects-7f81aa22.vercel.app/",
+      previewImg: image2,
+      descriptipn: "Find recommended women in tech that are inspired by your current role"
+    },
+    {
+      id: 2,
+      name: "Weather App",
+      url: "https://weather-favorite-tracking-app-elisefrazier1.replit.app/",
+      previewImg: image3,
+      description: "Get wing speeds of asynchronously via weather app API"
+    }
+  ]
   return (
     <section
       className="bg-primary text-cyan-700 px-5 py-32"
@@ -31,36 +52,11 @@ const Project = () => {
       </div>
 
       <div className="projects container flex flex-row flex-wrap gap-10 justify-center">
+        <ProjectCards urls={urls} />
         <SampleReactComponents />
         <PhotoGallery />
         <FigmaUI />
-        {/* {projects.map((project, i) => {
-          return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                <p className="py-5 text-center font-bold px-2 text-white">
-                  {project.desc}
-                </p>
 
-                <div className="mx-auto">
-                  <a
-                    href={project.live}
-                    className="px-5 py-2 bg-orange-500 hover:bg-orange-500 mr-5 font-bold"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={project.code}
-                    className="px-5 py-2 bg-orange-700 hover:bg--800 font-bold"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-            </div>
-          );
-        })} */}
       </div>
     </section>
   );
