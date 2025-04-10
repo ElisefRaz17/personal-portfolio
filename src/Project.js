@@ -6,12 +6,14 @@ import ProjectCards from "./components/ProjectCards.js";
 import image1 from "./assets/todoapp.png";
 import image2 from "./assets/icanbeher.png"
 import image3 from "./assets/weathertracker.png"
+import image4 from "./assets/DarkLight.png"
+import image5 from "./assets/ManualUpload.png"
 
 const Project = () => {
   const urls = [
     {
       id: 0,
-      name: 'ToDo List App',
+      name: 'Todo List App',
       url: "https://github.com/ElisefRaz17/todolist",
       previewImg: image1,
       description: "A TodoList App built with MERN tech stack and user authentication"
@@ -28,7 +30,21 @@ const Project = () => {
       name: "Weather App",
       url: "https://weather-favorite-tracking-app-elisefrazier1.replit.app/",
       previewImg: image3,
-      description: "Get wing speeds of asynchronously via weather app API"
+      description: "Get wind speeds of asynchronously via weather app API"
+    },
+    {
+      id:3,
+      name:"Light/Dark Mode",
+      url:"https://replit.com/@EliseFrazier1/DynamicMUIGridLayout?v=1",
+      previewImg:image4,
+      description:"A sample MVP version of the light/dark mode integration I did for a document based application"
+    },
+    {
+      id:4,
+      name:"Manual Document Upload",
+      url:"https://replit.com/@EliseFrazier1/ReactDropzone-MVP?v=1",
+      previewImg:image5,
+      description:"A small MVP version of a Manual Document Upload Feature"
     }
   ]
   return (

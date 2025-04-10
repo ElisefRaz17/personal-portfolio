@@ -16,7 +16,7 @@ function ProjectCards(props) {
   return (
     <>
       {props.urls.map((item) => (
-        <Card id={item.id} sx={{maxWidth:345}}>
+        <Card key={item.id} sx={{maxWidth:345}}>
           <CardMedia
             component="img"
             height="194"
