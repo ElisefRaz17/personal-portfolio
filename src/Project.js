@@ -8,6 +8,7 @@ import image2 from "./assets/icanbeher.png"
 import image3 from "./assets/weathertracker.png"
 import image4 from "./assets/DarkLight.png"
 import image5 from "./assets/ManualUpload.png"
+import image6 from "./aasets/TipApp.png"
 
 const Project = () => {
   const urls = [
@@ -45,6 +46,13 @@ const Project = () => {
       url:"https://replit.com/@EliseFrazier1/ReactDropzone-MVP?v=1",
       previewImg:image5,
       description:"A small MVP version of a Manual Document Upload Feature"
+    },
+    {
+      id:5,
+      name:"Angular Tip Calculator",
+      url:"https://replit.com/@EliseFrazier1/Tip-Calculator-App?v=1",
+      previewImg:image6,
+      description:"A Angular Tip Calculator"
     }
   ]
   return (
