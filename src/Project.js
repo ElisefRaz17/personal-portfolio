@@ -8,7 +8,9 @@ import image2 from "./assets/icanbeher.png"
 import image3 from "./assets/weathertracker.png"
 import image4 from "./assets/DarkLight.png"
 import image5 from "./assets/ManualUpload.png"
-import image6 from "./aasets/TipApp.png"
+import image6 from "./assets/TipApp.png"
+import image7 from "./assets/HuddleLandingPage.png"
+
 
 const Project = () => {
   const urls = [
@@ -53,6 +55,13 @@ const Project = () => {
       url:"https://replit.com/@EliseFrazier1/Tip-Calculator-App?v=1",
       previewImg:image6,
       description:"A Angular Tip Calculator"
+    },
+    {
+      id:6,
+      name:"Angular Huddle Landing Page",
+      url:"https://replit.com/@EliseFrazier1/Huddle-Landing-Page?v=1",
+      previewImg:image7,
+      description:"A Angular Huddle Landing Page"
     }
   ]
   return (
